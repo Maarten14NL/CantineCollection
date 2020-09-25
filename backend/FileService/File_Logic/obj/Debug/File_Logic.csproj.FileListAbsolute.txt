@@ -1,0 +1,6 @@
+C:\fontys\FileService\File_Logic\bin\Debug\File_Logic.dll
+C:\fontys\FileService\File_Logic\bin\Debug\File_Logic.pdb
+C:\fontys\FileService\File_Logic\obj\Debug\File_Logic.csprojAssemblyReference.cache
+C:\fontys\FileService\File_Logic\obj\Debug\File_Logic.csproj.CoreCompileInputs.cache
+C:\fontys\FileService\File_Logic\obj\Debug\File_Logic.dll
+C:\fontys\FileService\File_Logic\obj\Debug\File_Logic.pdb

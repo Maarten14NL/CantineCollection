@@ -1,0 +1,158 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionApp\\CollectionApp.csproj": {}
+  },
+  "projects": {
+    "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionApp\\CollectionApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionApp\\CollectionApp.csproj",
+        "projectName": "CollectionApp",
+        "projectPath": "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionApp\\CollectionApp.csproj",
+        "packagesPath": "C:\\Users\\maart\\.nuget\\packages\\",
+        "outputPath": "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\maart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionLogic\\CollectionLogic.csproj": {
+                "projectPath": "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionLogic\\CollectionLogic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.8, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionData\\CollectionData.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionData\\CollectionData.csproj",
+        "projectName": "CollectionData",
+        "projectPath": "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionData\\CollectionData.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj": {
+                "projectPath": "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj",
+        "projectName": "CollectionEntities",
+        "projectPath": "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionFactory\\CollectionFactory.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionFactory\\CollectionFactory.csproj",
+        "projectName": "CollectionFactory",
+        "projectPath": "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionFactory\\CollectionFactory.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionData\\CollectionData.csproj": {
+                "projectPath": "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionData\\CollectionData.csproj"
+              },
+              "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj": {
+                "projectPath": "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionLogic\\CollectionLogic.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionLogic\\CollectionLogic.csproj",
+        "projectName": "CollectionLogic",
+        "projectPath": "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionLogic\\CollectionLogic.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj": {
+                "projectPath": "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj"
+              },
+              "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionFactory\\CollectionFactory.csproj": {
+                "projectPath": "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionFactory\\CollectionFactory.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}

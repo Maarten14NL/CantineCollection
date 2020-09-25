@@ -1,0 +1,14 @@
+C:\fontys\svshks\backend\CollectionApp\CollectionFactory\bin\Debug\CollectionFactory.dll
+C:\fontys\svshks\backend\CollectionApp\CollectionFactory\bin\Debug\CollectionFactory.pdb
+C:\fontys\svshks\backend\CollectionApp\CollectionFactory\bin\Debug\CollectionData.dll
+C:\fontys\svshks\backend\CollectionApp\CollectionFactory\bin\Debug\CollectionEntities.dll
+C:\fontys\svshks\backend\CollectionApp\CollectionFactory\bin\Debug\EntityFramework.dll
+C:\fontys\svshks\backend\CollectionApp\CollectionFactory\bin\Debug\CollectionData.pdb
+C:\fontys\svshks\backend\CollectionApp\CollectionFactory\bin\Debug\CollectionData.dll.config
+C:\fontys\svshks\backend\CollectionApp\CollectionFactory\bin\Debug\CollectionEntities.pdb
+C:\fontys\svshks\backend\CollectionApp\CollectionFactory\bin\Debug\EntityFramework.xml
+C:\fontys\svshks\backend\CollectionApp\CollectionFactory\obj\Debug\CollectionFactory.csprojAssemblyReference.cache
+C:\fontys\svshks\backend\CollectionApp\CollectionFactory\obj\Debug\CollectionFactory.csproj.CoreCompileInputs.cache
+C:\fontys\svshks\backend\CollectionApp\CollectionFactory\obj\Debug\CollectionFactory.csproj.CopyComplete
+C:\fontys\svshks\backend\CollectionApp\CollectionFactory\obj\Debug\CollectionFactory.dll
+C:\fontys\svshks\backend\CollectionApp\CollectionFactory\obj\Debug\CollectionFactory.pdb

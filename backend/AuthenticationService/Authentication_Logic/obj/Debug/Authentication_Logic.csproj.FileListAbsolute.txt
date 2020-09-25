@@ -1,0 +1,12 @@
+C:\fontys\AuthenticationService\Authentication_Logic\bin\Debug\Authentication_Logic.dll
+C:\fontys\AuthenticationService\Authentication_Logic\bin\Debug\Authentication_Logic.pdb
+C:\fontys\AuthenticationService\Authentication_Logic\obj\Debug\Authentication_Logic.csprojAssemblyReference.cache
+C:\fontys\AuthenticationService\Authentication_Logic\obj\Debug\Authentication_Logic.csproj.CoreCompileInputs.cache
+C:\fontys\AuthenticationService\Authentication_Logic\obj\Debug\Authentication_Logic.dll
+C:\fontys\AuthenticationService\Authentication_Logic\obj\Debug\Authentication_Logic.pdb
+C:\fontys\svshks\backend\AuthenticationService\Authentication_Logic\bin\Debug\Authentication_Logic.dll
+C:\fontys\svshks\backend\AuthenticationService\Authentication_Logic\bin\Debug\Authentication_Logic.pdb
+C:\fontys\svshks\backend\AuthenticationService\Authentication_Logic\obj\Debug\Authentication_Logic.csprojAssemblyReference.cache
+C:\fontys\svshks\backend\AuthenticationService\Authentication_Logic\obj\Debug\Authentication_Logic.csproj.CoreCompileInputs.cache
+C:\fontys\svshks\backend\AuthenticationService\Authentication_Logic\obj\Debug\Authentication_Logic.dll
+C:\fontys\svshks\backend\AuthenticationService\Authentication_Logic\obj\Debug\Authentication_Logic.pdb

@@ -1,0 +1,16 @@
+C:\fontys\svshks\backend\CollectionApp\CollectionLogic\bin\Debug\CollectionLogic.dll
+C:\fontys\svshks\backend\CollectionApp\CollectionLogic\bin\Debug\CollectionLogic.pdb
+C:\fontys\svshks\backend\CollectionApp\CollectionLogic\bin\Debug\CollectionEntities.dll
+C:\fontys\svshks\backend\CollectionApp\CollectionLogic\bin\Debug\CollectionFactory.dll
+C:\fontys\svshks\backend\CollectionApp\CollectionLogic\bin\Debug\CollectionData.dll
+C:\fontys\svshks\backend\CollectionApp\CollectionLogic\bin\Debug\EntityFramework.dll
+C:\fontys\svshks\backend\CollectionApp\CollectionLogic\bin\Debug\CollectionEntities.pdb
+C:\fontys\svshks\backend\CollectionApp\CollectionLogic\bin\Debug\CollectionFactory.pdb
+C:\fontys\svshks\backend\CollectionApp\CollectionLogic\bin\Debug\CollectionData.pdb
+C:\fontys\svshks\backend\CollectionApp\CollectionLogic\bin\Debug\CollectionData.dll.config
+C:\fontys\svshks\backend\CollectionApp\CollectionLogic\bin\Debug\EntityFramework.xml
+C:\fontys\svshks\backend\CollectionApp\CollectionLogic\obj\Debug\CollectionLogic.csprojAssemblyReference.cache
+C:\fontys\svshks\backend\CollectionApp\CollectionLogic\obj\Debug\CollectionLogic.csproj.CoreCompileInputs.cache
+C:\fontys\svshks\backend\CollectionApp\CollectionLogic\obj\Debug\CollectionLogic.csproj.CopyComplete
+C:\fontys\svshks\backend\CollectionApp\CollectionLogic\obj\Debug\CollectionLogic.dll
+C:\fontys\svshks\backend\CollectionApp\CollectionLogic\obj\Debug\CollectionLogic.pdb

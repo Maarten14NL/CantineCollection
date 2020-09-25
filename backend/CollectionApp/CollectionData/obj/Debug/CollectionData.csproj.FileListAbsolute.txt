@@ -1,0 +1,16 @@
+C:\fontys\svshks\backend\CollectionApp\CollectionData\bin\Debug\CollectionData.dll.config
+C:\fontys\svshks\backend\CollectionApp\CollectionData\bin\Debug\CollectionData.dll
+C:\fontys\svshks\backend\CollectionApp\CollectionData\bin\Debug\CollectionData.pdb
+C:\fontys\svshks\backend\CollectionApp\CollectionData\bin\Debug\CollectionEntities.dll
+C:\fontys\svshks\backend\CollectionApp\CollectionData\bin\Debug\EntityFramework.dll
+C:\fontys\svshks\backend\CollectionApp\CollectionData\bin\Debug\EntityFramework.SqlServer.dll
+C:\fontys\svshks\backend\CollectionApp\CollectionData\bin\Debug\CollectionEntities.pdb
+C:\fontys\svshks\backend\CollectionApp\CollectionData\bin\Debug\EntityFramework.xml
+C:\fontys\svshks\backend\CollectionApp\CollectionData\bin\Debug\EntityFramework.SqlServer.xml
+C:\fontys\svshks\backend\CollectionApp\CollectionData\obj\Debug\CollectionData.csprojAssemblyReference.cache
+C:\fontys\svshks\backend\CollectionApp\CollectionData\obj\Debug\CollectionData.csproj.CoreCompileInputs.cache
+C:\fontys\svshks\backend\CollectionApp\CollectionData\obj\Debug\CollectionData.csproj.CopyComplete
+C:\fontys\svshks\backend\CollectionApp\CollectionData\obj\Debug\CollectionData.dll
+C:\fontys\svshks\backend\CollectionApp\CollectionData\obj\Debug\CollectionData.pdb
+C:\fontys\svshks\backend\CollectionApp\CollectionData\bin\Debug\System.Data.SqlClient.dll
+C:\fontys\svshks\backend\CollectionApp\CollectionData\bin\Debug\System.Data.SqlClient.xml

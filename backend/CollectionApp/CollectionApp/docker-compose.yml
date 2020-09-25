@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+    myproject:
+        image: collectionapp:dev
+        build:
+            context: .
+            dockerfile: Dockerfile   
