@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zs726NG4sNxV1ZoinUljm+mk5zIVRA3YlZYzbs6l5xEASoyZK59qPONWmbiHBlYPekS0VerA5ngP5dAfHnnAkA==",
+  "dgSpecHash": "Waiew9YeRXd1E5Ifwqqicz9sErJYJwiQB0Gup/Z9qPNsWS8XwqIG5i/QQJzTdBoY9/HUWFsF6vkfLqlqBt7qEg==",
   "success": true,
-  "projectFilePath": "C:\\fontys\\svshks\\backend\\CollectionApp\\CollectionApp\\CollectionApp.csproj",
+  "projectFilePath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\CollectionApp\\CollectionApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\maart\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\maart\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

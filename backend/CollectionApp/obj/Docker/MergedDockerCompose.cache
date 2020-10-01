@@ -1,0 +1,16 @@
+services:
+  collectionapp:
+    build:
+      context: C:\fontys\git\CantineCollection\backend\CollectionApp
+      dockerfile: CollectionApp/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: collectionapp
+    ports:
+    - 80/tcp
+    - 443/tcp
+    volumes:
+    - C:\Users\maart\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\maart\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

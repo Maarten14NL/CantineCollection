@@ -1,19 +1,26 @@
 import { Injectable } from '@angular/core';
 import {Router} from '@angular/router';
+import {CollectionCallService} from '../collection-call/collection-call.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
+  private loggedIn = false;
+  loginUser: any;
+
   constructor(
+    private collectionCallService: CollectionCallService,
     private router: Router
   ) { }
-  private loggedIn = false;
 
   logIn() {
-    this.loggedIn = true;
-    this.router.navigate(['/']);
+    this.collectionCallService.get('/auth').subscribe(login => {
+      this.loginUser = login;
+      this.loggedIn = true;
+      this.router.navigate(['/']);
+    });
   }
 
   logOut() {

@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  collectionapp:
+    container_name: collectionapp
+    image: ${DOCKER_REGISTRY-}collectionapp
+    build:
+      context: .
+      dockerfile: CollectionApp/Dockerfile
+    networks:
+      - collectionapp-network
+    
+  db-server:
+    image: mcr.microsoft.com/mssql/server
+    container_name: db-server
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=G4sLOj7P
+
+    ports:
+      - "1400:1433"
+    networks:
+      - collectionapp-network
+
+networks:
+  collectionapp-network:
+    driver: bridge

@@ -4,3 +4,9 @@ C:\fontys\svshks\backend\CollectionApp\CollectionEntities\obj\Debug\CollectionEn
 C:\fontys\svshks\backend\CollectionApp\CollectionEntities\obj\Debug\CollectionEntities.csproj.CoreCompileInputs.cache
 C:\fontys\svshks\backend\CollectionApp\CollectionEntities\obj\Debug\CollectionEntities.dll
 C:\fontys\svshks\backend\CollectionApp\CollectionEntities\obj\Debug\CollectionEntities.pdb
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionEntities\bin\Debug\CollectionEntities.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionEntities\bin\Debug\CollectionEntities.pdb
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionEntities\obj\Debug\CollectionEntities.csprojAssemblyReference.cache
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionEntities\obj\Debug\CollectionEntities.csproj.CoreCompileInputs.cache
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionEntities\obj\Debug\CollectionEntities.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionEntities\obj\Debug\CollectionEntities.pdb

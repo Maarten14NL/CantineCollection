@@ -60,21 +60,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ItemController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Entities\Order.cs" />
     <Compile Include="CollectionDatabase.cs" />
+    <Compile Include="Migrations\202009240956596_InitialCreate.cs" />
+    <Compile Include="Migrations\202009240956596_InitialCreate.designer.cs">
+      <DependentUpon>202009240956596_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App - Copy.config" />
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\CollectionEntities\CollectionEntities.csproj">
       <Project>{6595C612-6B0A-4EAB-9A6F-405206B507F2}</Project>
       <Name>CollectionEntities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202009240956596_InitialCreate.resx">
+      <DependentUpon>202009240956596_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

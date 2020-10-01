@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CollectionEntities;
+using CollectionFactory;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,11 +8,16 @@ using System.Threading.Tasks;
 
 namespace CollectionLogic
 {
-    class User
+    public class User
     {
-        public void GetUser()
-        {
+        private readonly IUser _UserDal = UserFactory.GetUser();
 
+        public List<UserDTO> Read()
+        {
+            List<UserDTO> userList = _UserDal.Read();
+            return userList;
         }
+
+        
     }
 }

@@ -14,7 +14,7 @@ namespace CollectionData
         // 
         // If you wish to target a different database and/or database provider, modify the 'Database' 
         // connection string in the application configuration file.
-        public CollectionDatabase(): base("CollectionDatabase")
+        public CollectionDatabase(): base("Server=db-server; Database=CollectionDatabase; User Id=sa;Password=G4sLOj7P; MultipleActiveResultSets=true")
         {
 
         }
@@ -23,5 +23,10 @@ namespace CollectionData
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         public virtual DbSet<OrderDTO> Orders { get; set; }
+        public virtual DbSet<UserDTO> Users { get; set; }
+        public virtual DbSet<ItemDTO> Items { get; set; }
+
+
+
     }
 }

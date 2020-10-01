@@ -1,0 +1,100 @@
+<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-image: url(assets/img/hks/banner2.jpg); background-size: cover; background-position: center top;">
+  <!-- Mask -->
+  <span class="mask bg-gradient-danger opacity-8"></span>
+  <!-- Header container -->
+  <div class="container-fluid d-flex align-items-center">
+    <div class="row">
+      <div class="col-lg-7 col-md-10">
+        <h1 class="display-2 text-white">Hello {{user.FirstName}}</h1>
+        <p class="text-white mt-0 mb-5">This is your profile page. You can see the progress you've made with your work and manage your projects or assigned tasks</p>
+        <a href="#!" class="btn btn-info">Edit profile</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="col-9 mb-5 mb-xl-0">
+      <div class="card card-profile shadow h-100">
+        <div class="card-header">
+          <h3 class="mb-0">Card tables</h3>
+        </div>
+        <div class="table-responsive">
+          <table class="table align-items-center ">
+            <thead class="thead-light">
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Prijs</th>
+              <th scope="col">Aantal</th>
+              <th scope="col">Totaal</th>
+              <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let order of [1]">
+              <th scope="row">
+                <div class="media align-items-center">
+                  <a href="javascript:void(0)" class="avatar rounded-circle mr-3">
+                    <img alt="Image placeholder" src="https://www.horecagoedkoop.nl/media/catalog/product/cache/d6a5bc6be806788c48ed774973599767/s/c/screen_shot_2016-01-14_at_14.39.10.png">
+                  </a>
+                  <div class="media-body">
+                    <span class="mb-0 text-sm">Bier</span>
+                  </div>
+                </div>
+              </th>
+              <td>
+                $1,80
+              </td>
+              <td>
+                {{order}} x
+              </td>
+              <td>
+                ${{1.80 * order}}
+              </td>
+              <td class="text-right">
+                <div ngbDropdown placement="bottom-right">
+                  <a class="btn btn-sm btn-icon-only text-light"  ngbDropdownToggle>
+                    <i class="fas fa-ellipsis-v"></i>
+                  </a>
+                  <div ngbDropdownMenu class=" dropdown-menu-right dropdown-menu-arrow">
+                    <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 mb-5 mb-xl-0">
+      <div class="card">
+        <!-- Card header -->
+        <div class="card-header">
+          <!-- Title -->
+          <h5 class="h3 mb-0">Team members</h5>
+        </div>
+        <!-- Card body -->
+        <div class="card-body">
+          <!-- List group -->
+          <ul class="list-group list-group-flush list my--3">
+            <li class="list-group-item px-0" *ngFor="let order of orders">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h4 class="mb-0">
+                    <a href="#!">14-10-2000</a>
+                  </h4>
+                </div>
+                <div class="col-auto">
+                  <button type="button" class="btn btn-sm btn-primary">Add</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

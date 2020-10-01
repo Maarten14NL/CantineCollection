@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CollectionEntities;
+using CollectionFactory;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +10,7 @@ namespace CollectionLogic
 {
     public class Auth
     {
+        private readonly IUser _UserDal = UserFactory.GetUser();
         private bool _loggedIn = false;
         public void Login()
         {
@@ -22,6 +25,12 @@ namespace CollectionLogic
         public Boolean IsLoggedIn()
         {
             return _loggedIn;
+        }
+
+        public UserDTO GetLoggedInUser()
+        {
+            UserDTO user = _UserDal.ById(1);
+            return user;
         }
     }
 }
