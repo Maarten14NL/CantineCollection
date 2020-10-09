@@ -4,10 +4,9 @@
   <!-- Header container -->
   <div class="container-fluid d-flex align-items-center">
     <div class="row">
-      <div class="col-lg-7 col-md-10">
+      <div class="col-lg-7 col-md-10" *ngIf="user">
         <h1 class="display-2 text-white">Hello {{user.FirstName}}</h1>
         <p class="text-white mt-0 mb-5">This is your profile page. You can see the progress you've made with your work and manage your projects or assigned tasks</p>
-        <a href="#!" class="btn btn-info">Edit profile</a>
       </div>
     </div>
   </div>
@@ -16,8 +15,19 @@
   <div class="row">
     <div class="col-9 mb-5 mb-xl-0">
       <div class="card card-profile shadow h-100">
+
         <div class="card-header">
-          <h3 class="mb-0">Card tables</h3>
+          <div class="row">
+            <div class="col-auto">
+              <h3 class="mb-0">Card tables</h3>
+              <span class="badge badge-dot mr-4" *ngIf="selectedOrderList">
+                <i class="bg-warning"></i> {{selectedOrderList}}
+              </span>
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-outline-primary float-right">Betalen</button>
+            </div>
+          </div>
         </div>
         <div class="table-responsive">
           <table class="table align-items-center ">
@@ -30,15 +40,15 @@
               <th scope="col"></th>
             </tr>
             </thead>
-            <tbody>
-            <tr *ngFor="let order of [1]">
+            <tbody *ngIf="selectedOrderList">
+            <tr *ngFor="let order of selectedOrderList.Orders">
               <th scope="row">
                 <div class="media align-items-center">
                   <a href="javascript:void(0)" class="avatar rounded-circle mr-3">
                     <img alt="Image placeholder" src="https://www.horecagoedkoop.nl/media/catalog/product/cache/d6a5bc6be806788c48ed774973599767/s/c/screen_shot_2016-01-14_at_14.39.10.png">
                   </a>
                   <div class="media-body">
-                    <span class="mb-0 text-sm">Bier</span>
+                    <span class="mb-0 text-sm">{{order.Name}}</span>
                   </div>
                 </div>
               </th>
@@ -46,10 +56,10 @@
                 $1,80
               </td>
               <td>
-                {{order}} x
+                {{order.Amount}} x
               </td>
               <td>
-                ${{1.80 * order}}
+                ${{1.80 * order.Amount}}
               </td>
               <td class="text-right">
                 <div ngbDropdown placement="bottom-right">
@@ -79,16 +89,17 @@
         <!-- Card body -->
         <div class="card-body">
           <!-- List group -->
-          <ul class="list-group list-group-flush list my--3">
-            <li class="list-group-item px-0" *ngFor="let order of orders">
+          <ul class="list-group list-group-flush list my--3" *ngIf="orderLists">
+            <li class="list-group-item px-0" *ngFor="let orderList of orderLists">
               <div class="row align-items-center">
                 <div class="col">
                   <h4 class="mb-0">
-                    <a href="#!">14-10-2000</a>
+                    <a (click)="selectActiveOrderList(orderList)">14-10-2000</a>
                   </h4>
                 </div>
                 <div class="col-auto">
-                  <button type="button" class="btn btn-sm btn-primary">Add</button>
+                  <button *ngIf="orderList != selectedOrderList" type="button" class="btn btn-sm btn-primary" (click)="selectActiveOrderList(orderList)">Bekijken</button>
+                  <button *ngIf="orderList == selectedOrderList" type="button" class="btn btn-sm btn-outline-primary">Bekijken</button>
                 </div>
               </div>
             </li>

@@ -10,7 +10,6 @@
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
-            ContextKey = "CollectionData.CollectionDatabase";
         }
 
         protected override void Seed(CollectionData.CollectionDatabase context)

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {AuthService} from '../../services/auth/auth.service';
+import {CollectionCallService} from '../../services/collection-call/collection-call.service';
+import {User} from '../../models/user';
+import {OrderList} from '../../models/order-list';
 
 @Component({
   selector: 'app-user-profile',
@@ -8,17 +11,25 @@ import {AuthService} from '../../services/auth/auth.service';
 })
 export class MyOrdersComponent implements OnInit {
 
-  user;
+  user: User;
+  orderLists: OrderList[];
+  selectedOrderList: OrderList;
 
   constructor(
-    private authService: AuthService
+    private authService: AuthService,
+    private collectionCallService: CollectionCallService
   ) { }
 
-  public orders: any[];
   ngOnInit() {
-    this.orders = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    console.log(this.orders)
+    this.collectionCallService.get('/myorders').subscribe(res => {
+      this.orderLists = res;
+      this.selectedOrderList = res[0];
+    });
     this.user = this.authService.loginUser;
+  }
+
+  selectActiveOrderList(orderLists: OrderList){
+    this.selectedOrderList = orderLists;
   }
 
 }

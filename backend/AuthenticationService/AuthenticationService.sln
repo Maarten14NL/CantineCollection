@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationService", "AuthenticationService\AuthenticationService.csproj", "{392593C6-20A9-45FC-85AC-5539E7AC0EB4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication_Logic", "Authentication_Logic\Authentication_Logic.csproj", "{25B76B10-AA65-493C-B147-84E13305CBF5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authenication_Data", "Authenication_Data\Authenication_Data.csproj", "{2A648A44-4B7D-43B8-A01A-9D8D41B6FEAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService", "AuthService\AuthService.csproj", "{90DB6493-3B07-44DC-902C-B263CCE1899E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{384E8D08-3B4E-4B55-B549-A635E885672E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{392593C6-20A9-45FC-85AC-5539E7AC0EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{392593C6-20A9-45FC-85AC-5539E7AC0EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{392593C6-20A9-45FC-85AC-5539E7AC0EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{392593C6-20A9-45FC-85AC-5539E7AC0EB4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{25B76B10-AA65-493C-B147-84E13305CBF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{25B76B10-AA65-493C-B147-84E13305CBF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25B76B10-AA65-493C-B147-84E13305CBF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +25,14 @@ Global
 		{2A648A44-4B7D-43B8-A01A-9D8D41B6FEAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A648A44-4B7D-43B8-A01A-9D8D41B6FEAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A648A44-4B7D-43B8-A01A-9D8D41B6FEAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90DB6493-3B07-44DC-902C-B263CCE1899E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90DB6493-3B07-44DC-902C-B263CCE1899E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90DB6493-3B07-44DC-902C-B263CCE1899E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90DB6493-3B07-44DC-902C-B263CCE1899E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{384E8D08-3B4E-4B55-B549-A635E885672E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{384E8D08-3B4E-4B55-B549-A635E885672E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{384E8D08-3B4E-4B55-B549-A635E885672E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{384E8D08-3B4E-4B55-B549-A635E885672E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

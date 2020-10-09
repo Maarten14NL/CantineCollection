@@ -1,4 +1,5 @@
-﻿using CollectionEntities;
+﻿using CollectionData.Entities;
+using CollectionEntities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

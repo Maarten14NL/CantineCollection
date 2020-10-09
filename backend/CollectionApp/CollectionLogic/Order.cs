@@ -10,11 +10,18 @@ namespace CollectionLogic
 {
     public class Order
     {
-        private readonly IOrder _OrderDal = OrderFactory.GetOrder();
+        private readonly IUserOrders _UserOrdersDal = UserOrdersFactory.GetUserOrders();
         public List<OrderDTO> Read(int? id = null)
         {
-            List<OrderDTO> orderList = _OrderDal.Read(id);
-            return orderList;
+            throw new NotImplementedException();
+            //List<OrderDTO> orderList = _UserOrdersDal.Read(id);
+            //return orderList;
+        }
+
+        public List<OrderListDTO> GetLoggedInUserOrders()
+        {
+            UserDTO loggedInUser = new Auth().GetLoggedInUser();
+            return _UserOrdersDal.GetByUser(loggedInUser);
         }
     }
 }

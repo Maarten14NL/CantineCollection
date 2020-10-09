@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Router} from '@angular/router';
 import {CollectionCallService} from '../collection-call/collection-call.service';
+import {User} from '../../models/user';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,7 @@ import {CollectionCallService} from '../collection-call/collection-call.service'
 export class AuthService {
 
   private loggedIn = false;
-  loginUser: any;
+  loginUser: User;
 
   constructor(
     private collectionCallService: CollectionCallService,

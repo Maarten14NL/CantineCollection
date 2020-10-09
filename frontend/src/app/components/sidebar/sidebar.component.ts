@@ -14,7 +14,7 @@ export const ROUTES: RouteInfo[] = [
 ];
 
 export const BARTENDERROUTES: RouteInfo[] = [
-  { path: '/bestellingen', title: 'Turven',  icon: 'ni-bullet-list-67', class: '' },
+  { path: '/turven', title: 'Turven',  icon: 'ni-bullet-list-67', class: '' },
   { path: '/lappen', title: 'Lappotten',  icon: 'ni-money-coins', class: '' },
 ];
 

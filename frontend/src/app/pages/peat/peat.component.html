@@ -1,0 +1,55 @@
+<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-image: url(assets/img/hks/banner2.jpg); background-size: cover; background-position: center top;">
+  <!-- Mask -->
+  <span class="mask bg-gradient-danger opacity-8"></span>
+  <!-- Header container -->
+  <div class="container-fluid d-flex align-items-center">
+    <div class="row">
+      <div class="col-lg-7 col-md-10" *ngIf="user">
+        <h1 class="display-2 text-white">Hello {{user.FirstName}}</h1>
+        <p class="text-white mt-0 mb-5">This is your profile page. You can see the progress you've made with your work and manage your projects or assigned tasks</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid mt--7">
+      <div class="card card-profile shadow h-100">
+
+        <div class="card-header">
+          <div class="row">
+            <div class="col-auto">
+              <h3 class="mb-0">Card tables</h3>
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-outline-primary float-right">Betalen</button>
+            </div>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table align-items-center ">
+            <thead class="thead-light">
+            <tr>
+              <th scope="col">Gebruiker</th>
+              <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody *ngIf="users">
+            <tr *ngFor="let user of users">
+              <th scope="row">
+                <div class="media align-items-center">
+                  <a href="javascript:void(0)" class="avatar rounded-circle mr-3">
+                    <img alt="Image placeholder" src="https://www.horecagoedkoop.nl/media/catalog/product/cache/d6a5bc6be806788c48ed774973599767/s/c/screen_shot_2016-01-14_at_14.39.10.png">
+                  </a>
+                  <div class="media-body">
+                    <span class="mb-0 text-sm">{{user.FirstName}} {{user.LastName}}</span>
+                  </div>
+                </div>
+              </th>
+              <td class="text-right">
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+</div>

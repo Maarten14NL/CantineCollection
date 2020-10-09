@@ -24,6 +24,7 @@ namespace CollectionData
 
         public virtual DbSet<OrderDTO> Orders { get; set; }
         public virtual DbSet<UserDTO> Users { get; set; }
+        public virtual DbSet<OrderListDTO> OrderLists { get; set; }
         public virtual DbSet<ItemDTO> Items { get; set; }
 
 

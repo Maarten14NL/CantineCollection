@@ -19,7 +19,7 @@ namespace CollectionApp.Controllers
         {
             //return "test";
 
-            return JsonSerializer.Serialize(cont.Read(1));
+            return JsonSerializer.Serialize(cont.GetLoggedInUserOrders());
         }
     }
 }

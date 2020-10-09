@@ -22,10 +22,9 @@ namespace CollectionData.Controllers
 
         public List<OrderDTO> Read(int? id = null)
         {
-            //throw new NotImplementedException();
-            var query = from b in db.Orders
-                        orderby b.Name
-                        select b;
+            //var query = from b in db.Orders
+            //            orderby b.Name
+            //            select b;
 
             List<OrderDTO> orders = db.Orders.ToList();
             return orders;

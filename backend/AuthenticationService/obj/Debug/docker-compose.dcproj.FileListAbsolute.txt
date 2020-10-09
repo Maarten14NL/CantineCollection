@@ -1,0 +1,9 @@
+C:\fontys\git\CantineCollection\backend\AuthenticationService\bin\Debug\appsettings.Development.json
+C:\fontys\git\CantineCollection\backend\AuthenticationService\bin\Debug\appsettings.json
+C:\fontys\git\CantineCollection\backend\AuthenticationService\bin\Debug\Properties\launchSettings.json
+C:\fontys\git\CantineCollection\backend\AuthenticationService\bin\Debug\AuthService.exe
+C:\fontys\git\CantineCollection\backend\AuthenticationService\bin\Debug\AuthService.dll
+C:\fontys\git\CantineCollection\backend\AuthenticationService\bin\Debug\AuthService.pdb
+C:\fontys\git\CantineCollection\backend\AuthenticationService\obj\Debug\docker-compose.dcprojAssemblyReference.cache
+C:\fontys\git\CantineCollection\backend\AuthenticationService\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\fontys\git\CantineCollection\backend\AuthenticationService\obj\Debug\docker-compose.dcproj.CopyComplete
