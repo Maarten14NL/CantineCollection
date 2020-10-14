@@ -1,0 +1,15 @@
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Factory\bin\Debug\CollectionAdmin_Factory.dll
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Factory\bin\Debug\CollectionAdmin_Factory.pdb
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Factory\obj\Debug\CollectionAdmin_Factory.csprojAssemblyReference.cache
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Factory\obj\Debug\CollectionAdmin_Factory.csproj.CoreCompileInputs.cache
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Factory\obj\Debug\CollectionAdmin_Factory.dll
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Factory\obj\Debug\CollectionAdmin_Factory.pdb
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Factory\bin\Debug\CollectionAdmin_Data.dll
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Factory\bin\Debug\CollectionAdmin_Entities.dll
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Factory\bin\Debug\CollectionAdmin_Data.pdb
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Factory\bin\Debug\CollectionAdmin_Data.dll.config
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Factory\bin\Debug\CollectionAdmin_Entities.pdb
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Factory\obj\Debug\CollectionAdmin_Factory.csproj.CopyComplete
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Factory\bin\Debug\CollectionAdmin_Factory.dll.config
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Factory\bin\Debug\EntityFramework.dll
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Factory\bin\Debug\EntityFramework.xml

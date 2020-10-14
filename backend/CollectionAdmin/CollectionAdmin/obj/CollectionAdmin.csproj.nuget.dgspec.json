@@ -1,0 +1,164 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin\\CollectionAdmin.csproj": {}
+  },
+  "projects": {
+    "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin\\CollectionAdmin.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin\\CollectionAdmin.csproj",
+        "projectName": "CollectionAdmin",
+        "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin\\CollectionAdmin.csproj",
+        "packagesPath": "C:\\Users\\maart\\.nuget\\packages\\",
+        "outputPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\maart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Logic\\CollectionAdmin_Logic.csproj": {
+                "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Logic\\CollectionAdmin_Logic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.9, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Data\\CollectionAdmin_Data.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Data\\CollectionAdmin_Data.csproj",
+        "projectName": "CollectionAdmin_Data",
+        "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Data\\CollectionAdmin_Data.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Entities\\CollectionAdmin_Entities.csproj": {
+                "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Entities\\CollectionAdmin_Entities.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Entities\\CollectionAdmin_Entities.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Entities\\CollectionAdmin_Entities.csproj",
+        "projectName": "CollectionAdmin_Entities",
+        "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Entities\\CollectionAdmin_Entities.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Factory\\CollectionAdmin_Factory.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Factory\\CollectionAdmin_Factory.csproj",
+        "projectName": "CollectionAdmin_Factory",
+        "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Factory\\CollectionAdmin_Factory.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Data\\CollectionAdmin_Data.csproj": {
+                "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Data\\CollectionAdmin_Data.csproj"
+              },
+              "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Entities\\CollectionAdmin_Entities.csproj": {
+                "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Entities\\CollectionAdmin_Entities.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Logic\\CollectionAdmin_Logic.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Logic\\CollectionAdmin_Logic.csproj",
+        "projectName": "CollectionAdmin_Logic",
+        "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Logic\\CollectionAdmin_Logic.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Entities\\CollectionAdmin_Entities.csproj": {
+                "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Entities\\CollectionAdmin_Entities.csproj"
+              },
+              "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Factory\\CollectionAdmin_Factory.csproj": {
+                "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAdmin\\CollectionAdmin_Factory\\CollectionAdmin_Factory.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}
