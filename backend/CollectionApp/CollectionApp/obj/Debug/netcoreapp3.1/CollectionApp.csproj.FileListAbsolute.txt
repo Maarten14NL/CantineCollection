@@ -82,3 +82,5 @@ C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\obj\Debug\ne
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\obj\Debug\netcoreapp3.1\CollectionApp.dll
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\obj\Debug\netcoreapp3.1\CollectionApp.pdb
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\obj\Debug\netcoreapp3.1\CollectionApp.genruntimeconfig.cache
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\netcoreapp3.1\CollectionAssortiment.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\netcoreapp3.1\CollectionAssortiment.pdb

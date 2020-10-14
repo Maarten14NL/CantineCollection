@@ -11,6 +11,7 @@ namespace CollectionLogic
     public class Order
     {
         private readonly IUserOrders _UserOrdersDal = UserOrdersFactory.GetUserOrders();
+        private readonly IProduct _ProductsDal = ProductFactory.GetAssortiment();
         public List<OrderDTO> Read(int? id = null)
         {
             throw new NotImplementedException();
@@ -21,6 +22,12 @@ namespace CollectionLogic
         public List<OrderListDTO> GetLoggedInUserOrders()
         {
             UserDTO loggedInUser = new Auth().GetLoggedInUser();
+
+            List<OrderListDTO> OrderListDTO = _UserOrdersDal.GetByUser(loggedInUser);
+            foreach (OrderDTO order in OrderListDTO[0].Orders)
+            {
+                order.Name = _ProductsDal.Read();
+            }
             return _UserOrdersDal.GetByUser(loggedInUser);
         }
     }

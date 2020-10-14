@@ -26,3 +26,5 @@ C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionFactory\obj\Debu
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionFactory\obj\Debug\CollectionFactory.csproj.CopyComplete
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionFactory\obj\Debug\CollectionFactory.dll
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionFactory\obj\Debug\CollectionFactory.pdb
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionFactory\bin\Debug\CollectionAssortiment.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionFactory\bin\Debug\CollectionAssortiment.pdb

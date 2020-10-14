@@ -30,3 +30,5 @@ C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionLogic\obj\Debug\
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionLogic\obj\Debug\CollectionLogic.csproj.CopyComplete
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionLogic\obj\Debug\CollectionLogic.dll
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionLogic\obj\Debug\CollectionLogic.pdb
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionLogic\bin\Debug\CollectionAssortiment.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionLogic\bin\Debug\CollectionAssortiment.pdb

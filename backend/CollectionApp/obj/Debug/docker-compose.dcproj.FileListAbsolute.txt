@@ -20,3 +20,5 @@ C:\fontys\git\CantineCollection\backend\CollectionApp\bin\Debug\CollectionData.d
 C:\fontys\git\CantineCollection\backend\CollectionApp\obj\Debug\docker-compose.dcprojAssemblyReference.cache
 C:\fontys\git\CantineCollection\backend\CollectionApp\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\fontys\git\CantineCollection\backend\CollectionApp\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\fontys\git\CantineCollection\backend\CollectionApp\bin\Debug\CollectionAssortiment.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\bin\Debug\CollectionAssortiment.pdb

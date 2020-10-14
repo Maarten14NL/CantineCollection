@@ -123,6 +123,9 @@
               },
               "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj": {
                 "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj"
+              },
+              "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAssortiment\\CollectionProduct.csproj": {
+                "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAssortiment\\CollectionProduct.csproj"
               }
             }
           }
@@ -145,6 +148,25 @@
               },
               "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\CollectionFactory\\CollectionFactory.csproj": {
                 "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\CollectionFactory\\CollectionFactory.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAssortiment\\CollectionProduct.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAssortiment\\CollectionProduct.csproj",
+        "projectName": "CollectionProduct",
+        "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAssortiment\\CollectionProduct.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj": {
+                "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj"
               }
             }
           }

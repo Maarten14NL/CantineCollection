@@ -312,7 +312,8 @@
         "type": "project",
         "dependencies": {
           "CollectionData": "1.0.0",
-          "CollectionEntities": "1.0.0"
+          "CollectionEntities": "1.0.0",
+          "CollectionProduct": "1.0.0"
         },
         "compile": {
           "bin/placeholder/CollectionFactory.dll": {}
@@ -332,6 +333,18 @@
         },
         "runtime": {
           "bin/placeholder/CollectionLogic.dll": {}
+        }
+      },
+      "CollectionProduct/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "CollectionEntities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CollectionProduct.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CollectionProduct.dll": {}
         }
       }
     }
@@ -1155,6 +1168,11 @@
       "type": "project",
       "path": "../CollectionLogic/CollectionLogic.csproj",
       "msbuildProject": "../CollectionLogic/CollectionLogic.csproj"
+    },
+    "CollectionProduct/1.0.0": {
+      "type": "project",
+      "path": "../../CollectionAssortiment/CollectionProduct.csproj",
+      "msbuildProject": "../../CollectionAssortiment/CollectionProduct.csproj"
     }
   },
   "projectFileDependencyGroups": {
