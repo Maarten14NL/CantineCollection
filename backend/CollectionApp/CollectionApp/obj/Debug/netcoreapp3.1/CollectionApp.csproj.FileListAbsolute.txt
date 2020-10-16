@@ -73,8 +73,6 @@ C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\ne
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\obj\Debug\netcoreapp3.1\CollectionApp.csprojAssemblyReference.cache
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\obj\Debug\netcoreapp3.1\CollectionApp.AssemblyInfoInputs.cache
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\obj\Debug\netcoreapp3.1\CollectionApp.AssemblyInfo.cs
-C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\obj\Debug\netcoreapp3.1\CollectionApp.csproj.CoreCompileInputs.cache
-C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\obj\Debug\netcoreapp3.1\CollectionApp.MvcApplicationPartsAssemblyInfo.cache
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\obj\Debug\netcoreapp3.1\CollectionApp.RazorTargetAssemblyInfo.cache
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\obj\Debug\netcoreapp3.1\CollectionApp.csproj.CopyComplete
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\obj\Debug\netcoreapp3.1\staticwebassets\CollectionApp.StaticWebAssets.Manifest.cache
@@ -84,3 +82,8 @@ C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\obj\Debug\ne
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\obj\Debug\netcoreapp3.1\CollectionApp.genruntimeconfig.cache
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\netcoreapp3.1\CollectionAssortiment.dll
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\netcoreapp3.1\CollectionAssortiment.pdb
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\obj\Debug\netcoreapp3.1\CollectionApp.csproj.CoreCompileInputs.cache
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\obj\Debug\netcoreapp3.1\CollectionApp.MvcApplicationPartsAssemblyInfo.cache

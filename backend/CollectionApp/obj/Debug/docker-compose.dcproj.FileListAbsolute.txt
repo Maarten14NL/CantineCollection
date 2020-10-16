@@ -22,3 +22,6 @@ C:\fontys\git\CantineCollection\backend\CollectionApp\obj\Debug\docker-compose.d
 C:\fontys\git\CantineCollection\backend\CollectionApp\obj\Debug\docker-compose.dcproj.CopyComplete
 C:\fontys\git\CantineCollection\backend\CollectionApp\bin\Debug\CollectionAssortiment.dll
 C:\fontys\git\CantineCollection\backend\CollectionApp\bin\Debug\CollectionAssortiment.pdb
+C:\fontys\git\CantineCollection\backend\CollectionApp\bin\Debug\System.Net.Http.Formatting.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\bin\Debug\Newtonsoft.Json.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\bin\Debug\Newtonsoft.Json.Bson.dll

@@ -1,4 +1,5 @@
 ﻿using CollectionEntities;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,16 +12,10 @@ namespace CollectionAssortiment
 {
     public class ProductController : IProduct
     {
-        static HttpClient client = new HttpClient();
-        static async Task RunAsync()
-        {
-            // Update port # in the following line.
-            client.BaseAddress = new Uri("http://localhost:64195/");
-            client.DefaultRequestHeaders.Accept.Clear();
-            client.DefaultRequestHeaders.Accept.Add(
-                new MediaTypeWithQualityHeaderValue("application/json"));
-        }
-            public bool Create(ProductDTO item)
+        private const string RequestUri = "https://rickandmortyapi.com/api/character/";
+        private static readonly HttpClient client = new HttpClient();
+
+        public bool Create(ProductDTO item)
         {
             throw new NotImplementedException();
         }
@@ -30,26 +25,29 @@ namespace CollectionAssortiment
             throw new NotImplementedException();
         }
 
-        public string Read(int? id = null)
+        public async Task<ApiDTO> ReadAsync(int? id = null)
         {
-            return ReadAsync(id).ToString();
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(
+                new MediaTypeWithQualityHeaderValue("application/json")
+            );
+
+            var stringTask = client.GetStringAsync("https://rickandmortyapi.com/api/character/");
+
+            HttpResponseMessage response = await client.GetAsync(RequestUri);
+            response.EnsureSuccessStatusCode();
+
+            // Deserialize the updated product from the response body.
+            //List<ProductDTO> product = await response.Content.ReadAsAsync<List<ProductDTO>>();
+
+            return response.Content.ReadAsAsync<ApiDTO>().Result;
+
+            //return myQuotes;
         }
 
         public bool Update(ProductDTO item)
         {
             throw new NotImplementedException();
-        }
-
-        private async Task<string> ReadAsync(int? id)
-        {
-            string products = "";
-
-            HttpResponseMessage response = await client.GetAsync("test");
-            if (response.IsSuccessStatusCode)
-            {
-                products = await response.Content.ReadAsStringAsync();
-            }
-            return products;
         }
     }
 }

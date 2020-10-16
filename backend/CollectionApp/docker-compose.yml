@@ -9,7 +9,7 @@ services:
       dockerfile: CollectionApp/Dockerfile
     networks:
       - collectionapp-network
-    
+
   db-server:
     image: mcr.microsoft.com/mssql/server
     container_name: db-server
