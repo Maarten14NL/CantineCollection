@@ -16,7 +16,7 @@ namespace CollectionLogic
             return new ProductDTO();
         }
 
-        public ApiDTO GetProducts()
+        public List<ProductDTO> GetProducts()
         {
             return _ProductsDal.ReadAsync().Result;
         }

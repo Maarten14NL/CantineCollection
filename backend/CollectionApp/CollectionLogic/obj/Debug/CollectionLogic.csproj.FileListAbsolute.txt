@@ -32,7 +32,5 @@ C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionLogic\obj\Debug\
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionLogic\obj\Debug\CollectionLogic.pdb
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionLogic\bin\Debug\CollectionAssortiment.dll
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionLogic\bin\Debug\CollectionAssortiment.pdb
-C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionLogic\bin\Debug\System.Net.Http.Formatting.dll
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionLogic\bin\Debug\Newtonsoft.Json.dll
-C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionLogic\bin\Debug\System.Net.Http.Formatting.xml
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionLogic\bin\Debug\Newtonsoft.Json.xml

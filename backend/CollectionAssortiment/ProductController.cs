@@ -12,8 +12,11 @@ namespace CollectionAssortiment
 {
     public class ProductController : IProduct
     {
-        private const string RequestUri = "https://rickandmortyapi.com/api/character/";
-        private static readonly HttpClient client = new HttpClient();
+        private const string RequestUri = "https://localhost:44317/api/product";
+        private static readonly HttpClient client = new HttpClient()
+        {
+            BaseAddress = new Uri("https://localhost:44317")
+    };
 
         public bool Create(ProductDTO item)
         {
@@ -25,24 +28,30 @@ namespace CollectionAssortiment
             throw new NotImplementedException();
         }
 
-        public async Task<ApiDTO> ReadAsync(int? id = null)
+        public async Task<List<ProductDTO>> ReadAsync()
         {
-            client.DefaultRequestHeaders.Accept.Clear();
-            client.DefaultRequestHeaders.Accept.Add(
-                new MediaTypeWithQualityHeaderValue("application/json")
-            );
+            //client.DefaultRequestHeaders.Accept.Clear();
+            //client.DefaultRequestHeaders.Accept.Add(
+            //    new MediaTypeWithQualityHeaderValue("application/json")
+            //);
 
-            var stringTask = client.GetStringAsync("https://rickandmortyapi.com/api/character/");
-
-            HttpResponseMessage response = await client.GetAsync(RequestUri);
+            HttpResponseMessage response = await client.GetAsync("/api/product");
             response.EnsureSuccessStatusCode();
+            string result = response.Content.ReadAsStringAsync().Result;
+            return JsonConvert.DeserializeObject<List<ProductDTO>>(result);
+        }
 
-            // Deserialize the updated product from the response body.
-            //List<ProductDTO> product = await response.Content.ReadAsAsync<List<ProductDTO>>();
+        public async Task<ProductDTO> ReadAsync(int id)
+        {
+            //client.DefaultRequestHeaders.Accept.Clear();
+            //client.DefaultRequestHeaders.Accept.Add(
+            //    new MediaTypeWithQualityHeaderValue("application/json")
+            //);
 
-            return response.Content.ReadAsAsync<ApiDTO>().Result;
-
-            //return myQuotes;
+            HttpResponseMessage response = await client.GetAsync("/api/product/" + id);
+            response.EnsureSuccessStatusCode();
+            string result = response.Content.ReadAsStringAsync().Result;
+            return JsonConvert.DeserializeObject<ProductDTO>(result);
         }
 
         public bool Update(ProductDTO item)

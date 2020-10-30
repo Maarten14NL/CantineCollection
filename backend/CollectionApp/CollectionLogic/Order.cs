@@ -1,5 +1,6 @@
 ﻿using CollectionEntities;
 using CollectionFactory;
+using CollectionLogic.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace CollectionLogic
     public class Order
     {
         private readonly IUserOrders _UserOrdersDal = UserOrdersFactory.GetUserOrders();
+        private readonly IProduct _ProductDal = ProductFactory.GetAssortiment();
         public List<OrderDTO> Read(int? id = null)
         {
             throw new NotImplementedException();
@@ -18,12 +20,20 @@ namespace CollectionLogic
             //return orderList;
         }
 
-        public List<OrderListDTO> GetLoggedInUserOrders()
+        public List<OrderList> GetLoggedInUserOrders()
         {
             UserDTO loggedInUser = new Auth().GetLoggedInUser();
 
             List<OrderListDTO> OrderListDTO = _UserOrdersDal.GetByUser(loggedInUser);
-            return _UserOrdersDal.GetByUser(loggedInUser);
+
+            List <OrderList> myOrderLists= new List<OrderList>();
+            foreach (OrderListDTO item in OrderListDTO)
+            {
+                OrderList myOrderList = new OrderList().OrderListDTOToOrderList(item);
+                myOrderLists.Add(myOrderList);
+            }
+
+            return myOrderLists;
         }
     }
 }

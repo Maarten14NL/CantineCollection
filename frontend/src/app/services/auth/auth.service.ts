@@ -17,7 +17,7 @@ export class AuthService {
   ) { }
 
   logIn() {
-    this.collectionCallService.get('/auth').subscribe(login => {
+    this.collectionCallService.get('api/auth').subscribe(login => {
       this.loginUser = login;
       this.loggedIn = true;
       this.router.navigate(['/']);

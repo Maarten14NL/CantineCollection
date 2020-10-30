@@ -1,12 +1,27 @@
 version: '3.4'
 
 services:
+  collectionadmin:
+    container_name: collectionadmin
+    image: ${DOCKER_REGISTRY-}collectionadmin
+    build:
+      context: .
+      dockerfile: CollectionAdmin/Dockerfile
+    ports:
+        - "9000:80"
+        - "9001:443"
+    networks:
+      - collectionapp-network
+
   collectionapp:
     container_name: collectionapp
     image: ${DOCKER_REGISTRY-}collectionapp
     build:
       context: .
       dockerfile: CollectionApp/Dockerfile
+    ports:
+        - "8000:80"
+        - "8001:443"
     networks:
       - collectionapp-network
 

@@ -30,3 +30,5 @@ C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionData\obj\Debug\C
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionData\obj\Debug\CollectionData.csproj.CopyComplete
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionData\obj\Debug\CollectionData.dll
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionData\obj\Debug\CollectionData.pdb
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionData\bin\Debug\System.Security.Permissions.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionData\bin\Debug\System.Security.Permissions.xml

@@ -32,7 +32,15 @@ namespace CollectionData.Controllers
 
         public bool Update(OrderDTO company)
         {
-            throw new NotImplementedException();
+
+            OrderDTO result = db.Orders.SingleOrDefault(b => b.Id == company.Id);
+            if (result != null)
+            {
+                result.Amount = company.Amount;
+                db.SaveChanges();
+                return true;
+            }
+            return false;
         }
     }
 }

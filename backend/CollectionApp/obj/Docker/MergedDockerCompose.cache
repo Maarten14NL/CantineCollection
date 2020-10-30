@@ -2,6 +2,27 @@ networks:
   collectionapp-network:
     driver: bridge
 services:
+  collectionadmin:
+    build:
+      context: C:\fontys\git\CantineCollection\backend\CollectionApp
+      dockerfile: CollectionAdmin/Dockerfile
+    container_name: collectionadmin
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: collectionadmin
+    networks:
+      collectionapp-network: {}
+    ports:
+    - published: 9000
+      target: 80
+    - target: 80
+    - published: 9001
+      target: 443
+    - target: 443
+    volumes:
+    - C:\Users\maart\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\maart\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
   collectionapp:
     build:
       context: C:\fontys\git\CantineCollection\backend\CollectionApp
@@ -14,7 +35,11 @@ services:
     networks:
       collectionapp-network: {}
     ports:
+    - published: 8000
+      target: 80
     - target: 80
+    - published: 8001
+      target: 443
     - target: 443
     volumes:
     - C:\Users\maart\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
