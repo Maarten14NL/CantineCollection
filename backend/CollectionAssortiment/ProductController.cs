@@ -18,17 +18,7 @@ namespace CollectionAssortiment
             BaseAddress = new Uri("https://localhost:44317")
     };
 
-        public bool Create(ProductDTO item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Delete(ProductDTO item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public async Task<List<ProductDTO>> ReadAsync()
+        public async Task<List<ProductDTO>> ReadAllAsync()
         {
             //client.DefaultRequestHeaders.Accept.Clear();
             //client.DefaultRequestHeaders.Accept.Add(
@@ -41,7 +31,7 @@ namespace CollectionAssortiment
             return JsonConvert.DeserializeObject<List<ProductDTO>>(result);
         }
 
-        public async Task<ProductDTO> ReadAsync(int id)
+        public async Task<ProductDTO> ReadOneAsync(int id)
         {
             //client.DefaultRequestHeaders.Accept.Clear();
             //client.DefaultRequestHeaders.Accept.Add(
@@ -52,11 +42,6 @@ namespace CollectionAssortiment
             response.EnsureSuccessStatusCode();
             string result = response.Content.ReadAsStringAsync().Result;
             return JsonConvert.DeserializeObject<ProductDTO>(result);
-        }
-
-        public bool Update(ProductDTO item)
-        {
-            throw new NotImplementedException();
         }
     }
 }

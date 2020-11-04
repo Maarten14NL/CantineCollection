@@ -14,15 +14,15 @@ namespace CollectionLogic
         private readonly IUserOrders _UserOrdersDal = UserOrdersFactory.GetUserOrders();
         private readonly IOrder _OrderDal = OrderFactory.GetOrder();
 
-        public List<Entities.User> Read()
+        public List<Entities.UserEntitiy> Read()
         {
             List<UserDTO> users = _UserDal.Read();
-            List<Entities.User> peatUsers = new List<Entities.User>();
+            List<Entities.UserEntitiy> peatUsers = new List<Entities.UserEntitiy>();
 
             foreach (UserDTO user in users)
             {
-                Entities.OrderList activeOrderList = new Entities.OrderList().OrderListDTOToOrderList(_UserOrdersDal.GetByUser(user).Last());
-                peatUsers.Add(new Entities.User()
+                Entities.OrderListEntity activeOrderList = new Entities.OrderListEntity().OrderListDTOToOrderList(_UserOrdersDal.GetByUser(user).Last());
+                peatUsers.Add(new Entities.UserEntitiy()
                 {
                     Id = user.Id,
                     FirstName = user.FirstName,
@@ -38,9 +38,9 @@ namespace CollectionLogic
             return peatUsers;
         }
 
-        public void updateOrder(Entities.Order order)
+        public void updateOrder(Entities.OrderEntity order)
         {
-            OrderDTO LastOrder = order.OrderToOrderDTO(order);
+            OrderDTO LastOrder = order.OrderToOrderDTO();
             Boolean test = _OrderDal.Update(LastOrder);
         }
     }

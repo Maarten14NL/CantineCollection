@@ -10,33 +10,47 @@ namespace CollectionData.Controllers
     public class OrderController : IOrder
     {
         CollectionDatabase db = new CollectionDatabase();
-        public bool Create(OrderDTO company)
+        public bool Create(OrderDTO order)
         {
-            throw new NotImplementedException();
+            if (order != null)
+            {
+                db.Orders.Add(order);
+                db.SaveChanges();
+                return true;
+            }
+            return false;
         }
 
-        public bool Delete(OrderDTO company)
+        public bool Delete(OrderDTO order)
         {
-            throw new NotImplementedException();
+            if (order != null)
+            {
+                db.Orders.Remove(order);
+                db.SaveChanges();
+                return true;
+            }
+            return false;
         }
 
-        public List<OrderDTO> Read(int? id = null)
+        public List<OrderDTO> ReadAll()
         {
-            //var query = from b in db.Orders
-            //            orderby b.Name
-            //            select b;
-
-            List<OrderDTO> orders = db.Orders.ToList();
-            return orders;
+            return db.Orders.ToList();
         }
 
-        public bool Update(OrderDTO company)
+        public OrderDTO ReadOne(int id)
+        {
+            return db.Orders.SingleOrDefault(o => o.Id == id);
+        }
+
+        public bool Update(OrderDTO order)
         {
 
-            OrderDTO result = db.Orders.SingleOrDefault(b => b.Id == company.Id);
+            OrderDTO result = db.Orders.SingleOrDefault(o => o.Id == order.Id);
             if (result != null)
             {
-                result.Amount = company.Amount;
+                result.Amount = order.Amount;
+                result.Name = order.Name;
+
                 db.SaveChanges();
                 return true;
             }

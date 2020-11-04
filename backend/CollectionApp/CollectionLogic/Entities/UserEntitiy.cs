@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace CollectionLogic.Entities
 {
-    public class User
+    public class UserEntitiy
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
         public string ProfilePicture { get; set; }
-        public OrderList OrderList { get; set; }
-        public Order LastOrder { get; set; }
+        public OrderListEntity OrderList { get; set; }
+        public OrderEntity LastOrder { get; set; }
     }
 }

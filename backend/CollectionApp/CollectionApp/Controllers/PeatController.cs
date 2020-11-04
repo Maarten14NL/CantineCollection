@@ -17,7 +17,7 @@ namespace CollectionApp.Controllers
 
         // GET: api/<PeatController>
         [HttpGet]
-        public List<CollectionLogic.Entities.User> Get()
+        public List<CollectionLogic.Entities.UserEntitiy> Get()
         {
             return cont.Read();
         }
@@ -31,7 +31,7 @@ namespace CollectionApp.Controllers
 
         // POST api/<PeatController>
         [HttpPost]
-        public void Post([FromBody] CollectionLogic.Entities.Order value)
+        public void Post([FromBody] CollectionLogic.Entities.OrderEntity value)
         {
             cont.updateOrder(value);
         }

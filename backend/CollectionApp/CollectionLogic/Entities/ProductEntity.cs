@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace CollectionLogic.Entities
 {
-    public class Product
+    public class ProductEntity
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public float Price { get; set; }
         public string Image { get; set; }
 
-        public Product ProductDTOToProduct(ProductDTO product)
+        public ProductEntity ProductDTOToProduct(ProductDTO product)
         {
-            return new Product()
+            return new ProductEntity()
             {
                 Id = product.Id,
                 Image = product.Image,

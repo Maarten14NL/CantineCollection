@@ -15,10 +15,11 @@ namespace CollectionEntities
 
     public interface IOrder
     {
-        List<OrderDTO> Read(int? id = null);
-        bool Create(OrderDTO company);
-        bool Update(OrderDTO company);
-        bool Delete(OrderDTO company);
+        List<OrderDTO> ReadAll();
+        OrderDTO ReadOne(int id);
+        bool Create(OrderDTO order);
+        bool Update(OrderDTO order);
+        bool Delete(OrderDTO order);
 
     }
 }

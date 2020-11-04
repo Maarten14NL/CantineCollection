@@ -11,29 +11,37 @@ namespace CollectionLogic
 {
     public class Order
     {
-        private readonly IUserOrders _UserOrdersDal = UserOrdersFactory.GetUserOrders();
-        private readonly IProduct _ProductDal = ProductFactory.GetAssortiment();
-        public List<OrderDTO> Read(int? id = null)
+        private readonly IOrder _OrderDal = OrderFactory.GetOrder();
+        public List<OrderEntity> ReadAll()
         {
-            throw new NotImplementedException();
-            //List<OrderDTO> orderList = _UserOrdersDal.Read(id);
-            //return orderList;
+            List<OrderEntity> orders = new List<OrderEntity>();
+
+            foreach (OrderDTO order in _OrderDal.ReadAll())
+            {
+                orders.Add(new OrderEntity().OrderDTOToOrder(order));
+            }
+            return orders;
         }
 
-        public List<OrderList> GetLoggedInUserOrders()
+        public OrderEntity ReadOne(int id)
         {
-            UserDTO loggedInUser = new Auth().GetLoggedInUser();
+            return new OrderEntity().OrderDTOToOrder(_OrderDal.ReadOne(id));
+        }
 
-            List<OrderListDTO> OrderListDTO = _UserOrdersDal.GetByUser(loggedInUser);
+        public Boolean Update(OrderEntity order)
+        {
+            return _OrderDal.Update(order.OrderToOrderDTO());
+        }
 
-            List <OrderList> myOrderLists= new List<OrderList>();
-            foreach (OrderListDTO item in OrderListDTO)
-            {
-                OrderList myOrderList = new OrderList().OrderListDTOToOrderList(item);
-                myOrderLists.Add(myOrderList);
-            }
+        public Boolean Create(OrderEntity order)
+        {
+            return _OrderDal.Create(order.OrderToOrderDTO());
+        }
 
-            return myOrderLists;
+        public Boolean Delete(int id)
+        {
+            OrderEntity order = this.ReadOne(id);
+            return _OrderDal.Delete(order.OrderToOrderDTO());
         }
     }
 }

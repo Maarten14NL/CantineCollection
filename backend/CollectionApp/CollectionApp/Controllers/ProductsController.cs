@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 using CollectionLogic;
+using CollectionLogic.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,16 +18,16 @@ namespace CollectionApp.Controllers
 
         // GET: api/<ProductController>
         [HttpGet]
-        public string Get()
+        public List<ProductEntity> Get()
         {
-            return JsonSerializer.Serialize(cont.GetProducts());
+            return cont.ReadAll();
         }
 
         // GET api/<ProductController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ProductEntity Get(int id)
         {
-            return JsonSerializer.Serialize(cont.GetProduct(id));
+            return cont.ReadOne(id);
         }
     }
 }

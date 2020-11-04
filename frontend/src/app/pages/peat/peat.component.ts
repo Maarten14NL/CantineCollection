@@ -21,10 +21,10 @@ export class PeatComponent implements OnInit {
   }
 
   changeAmount(user, calculate = 1) {
-    console.log( 5 + calculate);
-    this.users[0].lastOrder.amount += calculate;
-    this.collectionCallService.post('api/peat', this.users[0].lastOrder).subscribe(res => {
-      console.log('test');
+    user.lastOrder.amount += calculate;
+    this.collectionCallService.post('api/order', user.lastOrder).subscribe(res => {
+    }, error => {
+      user.lastOrder.amount -= calculate;
     });
   }
 

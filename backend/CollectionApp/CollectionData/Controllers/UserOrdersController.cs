@@ -11,14 +11,51 @@ namespace CollectionData.Controllers
     public class UserOrdersController : IUserOrders
     {
         readonly CollectionDatabase db = new CollectionDatabase();
+
         public bool Create(OrderListDTO company)
         {
-            throw new NotImplementedException();
+            if (company != null)
+            {
+                db.OrderLists.Add(company);
+                db.SaveChanges();
+                return true;
+            }
+            return false;
         }
 
         public bool Delete(OrderListDTO company)
         {
-            throw new NotImplementedException();
+            if (company != null)
+            {
+                db.OrderLists.Remove(company);
+                db.SaveChanges();
+                return true;
+            }
+            return false;
+        }
+
+        public List<OrderListDTO> ReadAll()
+        {
+            return db.OrderLists.ToList();
+        }
+
+        public OrderListDTO ReadOne(int id)
+        {
+            return db.OrderLists.SingleOrDefault(o => o.Id == id);
+        }
+
+        public bool Update(OrderListDTO company)
+        {
+            OrderListDTO result = db.OrderLists.SingleOrDefault(o => o.Id == company.Id);
+            if (result != null)
+            {
+                result.Orders = company.Orders;
+                result.User = company.User;
+
+                db.SaveChanges();
+                return true;
+            }
+            return false;
         }
 
         public List<OrderListDTO> GetByUser(UserDTO user)
@@ -27,16 +64,6 @@ namespace CollectionData.Controllers
                        .Where(b => b.User.Id == 1)
                        .Include(b => b.Orders).ToList();
             return userOders;
-        }
-
-        public List<OrderListDTO> Read(int? id = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Update(OrderListDTO company)
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using CollectionEntities;
 using CollectionFactory;
+using CollectionLogic.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,23 @@ namespace CollectionLogic
 
         public List<ProductDTO> GetProducts()
         {
-            return _ProductsDal.ReadAsync().Result;
+            return _ProductsDal.ReadAllAsync().Result;
+        }
+
+        public List<ProductEntity> ReadAll()
+        {
+            List<ProductEntity> products = new List<ProductEntity>();
+
+            foreach (ProductDTO product in _ProductsDal.ReadAllAsync().Result)
+            {
+                products.Add(new ProductEntity().ProductDTOToProduct(product));
+            }
+            return products;
+        }
+
+        public ProductEntity ReadOne(int id)
+        {
+            return new ProductEntity().ProductDTOToProduct(_ProductsDal.ReadOneAsync(id).Result);
         }
     }
 }

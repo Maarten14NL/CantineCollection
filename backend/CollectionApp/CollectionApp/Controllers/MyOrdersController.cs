@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using CollectionLogic;
 using System.Text.Json;
+using CollectionLogic.Entities;
 
 namespace CollectionApp.Controllers
 {
@@ -13,13 +14,13 @@ namespace CollectionApp.Controllers
     [ApiController]
     public class MyOrdersController : ControllerBase
     {
-        private readonly Order cont = new Order();
+        private readonly LoggedInUser cont = new LoggedInUser();
         [HttpGet]
-        public string Get()
+        public List<OrderListEntity> Get()
         {
-            //return "test";
+            return cont.GetLoggedInUserOrders();
 
-            return JsonSerializer.Serialize(cont.GetLoggedInUserOrders());
+            //return JsonSerializer.Serialize();
         }
     }
 }

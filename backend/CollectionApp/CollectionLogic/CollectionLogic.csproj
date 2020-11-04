@@ -42,11 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Auth.cs" />
-    <Compile Include="Entities\Order.cs" />
-    <Compile Include="Entities\Product.cs" />
-    <Compile Include="Entities\OrderList.cs" />
-    <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\OrderEntity.cs" />
+    <Compile Include="Entities\ProductEntity.cs" />
+    <Compile Include="Entities\OrderListEntity.cs" />
+    <Compile Include="Entities\UserEntitiy.cs" />
+    <Compile Include="LoggedInUser.cs" />
     <Compile Include="Order.cs" />
+    <Compile Include="OrderList.cs" />
     <Compile Include="Peat.cs" />
     <Compile Include="Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

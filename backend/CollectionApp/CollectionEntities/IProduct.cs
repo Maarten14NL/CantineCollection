@@ -24,12 +24,7 @@ namespace CollectionEntities
 
     public interface IProduct
     {
-        Task<List<ProductDTO>> ReadAsync();
-        Task<ProductDTO> ReadAsync(int id);
-
-        bool Create(ProductDTO item);
-        bool Update(ProductDTO item);
-        bool Delete(ProductDTO item);
-
+        Task<List<ProductDTO>> ReadAllAsync();
+        Task<ProductDTO> ReadOneAsync(int id);
     }
 }

@@ -15,7 +15,8 @@ namespace CollectionEntities
 
     public interface IUserOrders
     {
-        List<OrderListDTO> Read(int? userId);
+        List<OrderListDTO> ReadAll();
+        OrderListDTO ReadOne(int id);
         bool Create(OrderListDTO company);
         bool Update(OrderListDTO company);
         bool Delete(OrderListDTO company);
