@@ -18,3 +18,5 @@ backend/CollectionApp/Services/Product/ProductLogic/obj/Debug/ProductLogic.cspro
 backend/CollectionApp/Services/Product/ProductService/obj/Debug/netcoreapp3.1/ProductService.csprojAssemblyReference.cache
 backend/CollectionAssortiment/obj/Debug/CollectionProduct.csprojAssemblyReference.cache
 backend/CollectionAuth/obj/Debug/CollectionAuth.csprojAssemblyReference.cache
+backend/CollectionApp/.vs/CollectionApp/DesignTimeBuild/.dtbcache.v2
+backend/CollectionApp/.vs/CollectionApp/DesignTimeBuild/.dtbcache.v2
