@@ -8,6 +8,10 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
 COPY ["CollectionAdmin/CollectionAdmin.csproj", "CollectionAdmin/"]
+COPY ["CollectionAdmin_Logic/CollectionAdmin_Logic.csproj", "CollectionAdmin_Logic/"]
+COPY ["CollectionAdmin_Entities/CollectionAdmin_Entities.csproj", "CollectionAdmin_Entities/"]
+COPY ["CollectionAdmin_Factory/CollectionAdmin_Factory.csproj", "CollectionAdmin_Factory/"]
+COPY ["CollectionAdmin_Data/CollectionAdmin_Data.csproj", "CollectionAdmin_Data/"]
 RUN dotnet restore "CollectionAdmin/CollectionAdmin.csproj"
 COPY . .
 WORKDIR "/src/CollectionAdmin"

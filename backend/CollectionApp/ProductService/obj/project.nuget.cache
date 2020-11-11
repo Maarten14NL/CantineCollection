@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "yNNv169YBNeUJSrqu794Tuz+efOdlbAUkt3cZAob8pvZ54i8YF4n6VCsepSFAGeow6Wd416FmoA+3bEKSJNWgg==",
+  "success": true,
+  "projectFilePath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\ProductService\\ProductService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\maart\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}

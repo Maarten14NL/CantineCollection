@@ -1,0 +1,12 @@
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Entities\bin\Debug\CollectionAdmin_Entities.dll
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Entities\bin\Debug\CollectionAdmin_Entities.pdb
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Entities\obj\Debug\CollectionAdmin_Entities.csprojAssemblyReference.cache
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Entities\obj\Debug\CollectionAdmin_Entities.csproj.CoreCompileInputs.cache
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Entities\obj\Debug\CollectionAdmin_Entities.dll
+C:\fontys\git\CantineCollection\backend\CollectionAdmin\CollectionAdmin_Entities\obj\Debug\CollectionAdmin_Entities.pdb
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionAdmin_Entities\bin\Debug\CollectionAdmin_Entities.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionAdmin_Entities\bin\Debug\CollectionAdmin_Entities.pdb
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionAdmin_Entities\obj\Debug\CollectionAdmin_Entities.csprojAssemblyReference.cache
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionAdmin_Entities\obj\Debug\CollectionAdmin_Entities.csproj.CoreCompileInputs.cache
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionAdmin_Entities\obj\Debug\CollectionAdmin_Entities.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionAdmin_Entities\obj\Debug\CollectionAdmin_Entities.pdb

@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuthFactory.cs" />
+    <Compile Include="ProductFactory.cs" />
     <Compile Include="ItemFactory.cs" />
     <Compile Include="UserOrdersFactory.cs" />
     <Compile Include="UserFactory.cs" />
@@ -48,6 +50,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\CollectionAssortiment\CollectionProduct.csproj">
+      <Project>{53F643DB-0F9B-4868-979B-679A5AECF9AD}</Project>
+      <Name>CollectionProduct</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CollectionAuth\CollectionAuth.csproj">
+      <Project>{F6AE4A85-64DC-4711-B2F4-B2C6E364120C}</Project>
+      <Name>CollectionAuth</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CollectionData\CollectionData.csproj">
       <Project>{8ad0390c-9146-4bf3-8e68-96456548c5ba}</Project>
       <Name>CollectionData</Name>
@@ -56,6 +66,9 @@
       <Project>{6595c612-6b0a-4eab-9a6f-405206b507f2}</Project>
       <Name>CollectionEntities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

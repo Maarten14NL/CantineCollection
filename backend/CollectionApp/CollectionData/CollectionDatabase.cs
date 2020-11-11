@@ -14,7 +14,9 @@ namespace CollectionData
         // 
         // If you wish to target a different database and/or database provider, modify the 'Database' 
         // connection string in the application configuration file.
-        public CollectionDatabase(): base("Server=db-server; Database=CollectionDatabase; User Id=sa;Password=G4sLOj7P; MultipleActiveResultSets=true")
+        private const string connectionString = "Server=localhost, 1400; Database=CollectionDatabase; User Id=sa;Password=G4sLOj7P; MultipleActiveResultSets=true;";
+        private const string connectionStringDocker = "Server=db-server; Database=CollectionDatabase; User Id=sa;Password=G4sLOj7P; MultipleActiveResultSets=true;";
+        public CollectionDatabase(): base()
         {
 
         }

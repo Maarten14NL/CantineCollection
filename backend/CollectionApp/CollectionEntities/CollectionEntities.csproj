@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IAuth.cs" />
+    <Compile Include="IProduct.cs" />
     <Compile Include="IItem.cs" />
     <Compile Include="IUserOrders.cs" />
     <Compile Include="IUser.cs" />

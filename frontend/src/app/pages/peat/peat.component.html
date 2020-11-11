@@ -30,6 +30,7 @@
             <tr>
               <th scope="col">Gebruiker</th>
               <th scope="col"></th>
+              <th scope="col"></th>
             </tr>
             </thead>
             <tbody *ngIf="users">
@@ -37,14 +38,27 @@
               <th scope="row">
                 <div class="media align-items-center">
                   <a href="javascript:void(0)" class="avatar rounded-circle mr-3">
-                    <img alt="Image placeholder" src="https://www.horecagoedkoop.nl/media/catalog/product/cache/d6a5bc6be806788c48ed774973599767/s/c/screen_shot_2016-01-14_at_14.39.10.png">
+                    <img alt="Image placeholder" src="assets/img/theme/{{user.profilePicture}}">
                   </a>
                   <div class="media-body">
-                    <span class="mb-0 text-sm">{{user.FirstName}} {{user.LastName}}</span>
+                    <span class="mb-0 text-sm">{{user.firstName}} {{user.lastName}}</span>
                   </div>
                 </div>
               </th>
               <td class="text-right">
+                <div class="btn-group">
+                  <button class="btn btn-primary" (click)="changeAmount(user, -1)"><i class="fa fa-minus"></i></button>
+                  <div class="btn m-0 py-0 px-2">
+                  <a href="javascript:void(0)" class="">
+                    <img class="avatar rounded-circle mr-3" alt="Image placeholder" src="https://www.horecagoedkoop.nl/media/catalog/product/cache/d6a5bc6be806788c48ed774973599767/s/c/screen_shot_2016-01-14_at_14.39.10.png">
+                    <span>{{user.lastOrder.amount}}X</span>
+                  </a>
+                  </div>
+                  <button class="btn btn-primary" (click)="changeAmount(user)"><i class="fa fa-plus"></i></button>
+                </div>
+              </td>
+              <td class="text-right">
+                <button class="btn btn-primary"><i class="fa fa-list"></i></button>
               </td>
             </tr>
             </tbody>

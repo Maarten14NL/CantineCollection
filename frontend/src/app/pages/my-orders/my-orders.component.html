@@ -41,25 +41,25 @@
             </tr>
             </thead>
             <tbody *ngIf="selectedOrderList">
-            <tr *ngFor="let order of selectedOrderList.Orders">
+            <tr *ngFor="let order of selectedOrderList.orders">
               <th scope="row">
                 <div class="media align-items-center">
                   <a href="javascript:void(0)" class="avatar rounded-circle mr-3">
                     <img alt="Image placeholder" src="https://www.horecagoedkoop.nl/media/catalog/product/cache/d6a5bc6be806788c48ed774973599767/s/c/screen_shot_2016-01-14_at_14.39.10.png">
                   </a>
                   <div class="media-body">
-                    <span class="mb-0 text-sm">{{order.Name}}</span>
+                    <span class="mb-0 text-sm">{{order.product.name}}</span>
                   </div>
                 </div>
               </th>
               <td>
-                $1,80
+                {{order.product.price | currency:"EUR"}}
               </td>
               <td>
-                {{order.Amount}} x
+                {{order.amount}} x
               </td>
               <td>
-                ${{1.80 * order.Amount}}
+                {{order.product.price * order.amount | currency:"EUR"}}
               </td>
               <td class="text-right">
                 <div ngbDropdown placement="bottom-right">

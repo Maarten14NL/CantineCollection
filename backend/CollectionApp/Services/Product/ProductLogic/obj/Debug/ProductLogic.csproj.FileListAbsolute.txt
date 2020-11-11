@@ -1,0 +1,16 @@
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductLogic\bin\Debug\ProductLogic.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductLogic\bin\Debug\ProductLogic.pdb
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductLogic\bin\Debug\ProductEntities.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductLogic\bin\Debug\ProductFactory.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductLogic\bin\Debug\ProductData.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductLogic\bin\Debug\EntityFramework.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductLogic\bin\Debug\ProductEntities.pdb
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductLogic\bin\Debug\ProductFactory.pdb
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductLogic\bin\Debug\ProductData.pdb
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductLogic\bin\Debug\ProductData.dll.config
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductLogic\bin\Debug\EntityFramework.xml
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductLogic\obj\Debug\ProductLogic.csprojAssemblyReference.cache
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductLogic\obj\Debug\ProductLogic.csproj.CoreCompileInputs.cache
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductLogic\obj\Debug\ProductLogic.csproj.CopyComplete
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductLogic\obj\Debug\ProductLogic.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductLogic\obj\Debug\ProductLogic.pdb

@@ -1,5 +1,6 @@
 ﻿using CollectionEntities;
 using CollectionFactory;
+using CollectionLogic.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,18 +11,37 @@ namespace CollectionLogic
 {
     public class Order
     {
-        private readonly IUserOrders _UserOrdersDal = UserOrdersFactory.GetUserOrders();
-        public List<OrderDTO> Read(int? id = null)
+        private readonly IOrder _OrderDal = OrderFactory.GetOrder();
+        public List<OrderEntity> ReadAll()
         {
-            throw new NotImplementedException();
-            //List<OrderDTO> orderList = _UserOrdersDal.Read(id);
-            //return orderList;
+            List<OrderEntity> orders = new List<OrderEntity>();
+
+            foreach (OrderDTO order in _OrderDal.ReadAll())
+            {
+                orders.Add(new OrderEntity().OrderDTOToOrder(order));
+            }
+            return orders;
         }
 
-        public List<OrderListDTO> GetLoggedInUserOrders()
+        public OrderEntity ReadOne(int id)
         {
-            UserDTO loggedInUser = new Auth().GetLoggedInUser();
-            return _UserOrdersDal.GetByUser(loggedInUser);
+            return new OrderEntity().OrderDTOToOrder(_OrderDal.ReadOne(id));
+        }
+
+        public Boolean Update(OrderEntity order)
+        {
+            return _OrderDal.Update(order.OrderToOrderDTO());
+        }
+
+        public Boolean Create(OrderEntity order)
+        {
+            return _OrderDal.Create(order.OrderToOrderDTO());
+        }
+
+        public Boolean Delete(int id)
+        {
+            OrderEntity order = this.ReadOne(id);
+            return _OrderDal.Delete(order.OrderToOrderDTO());
         }
     }
 }

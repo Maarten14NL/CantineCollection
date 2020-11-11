@@ -1,15 +1,40 @@
 version: '3.4'
 
 services:
+  collectionadmin:
+    container_name: collectionadmin
+    image: ${DOCKER_REGISTRY-}collectionadmin
+    build:
+      context: .
+      dockerfile: CollectionAdmin/Dockerfile
+    ports:
+        - "9000:80"
+        - "9001:443"
+    networks:
+      - collectionapp-network
+
   collectionapp:
     container_name: collectionapp
     image: ${DOCKER_REGISTRY-}collectionapp
     build:
       context: .
       dockerfile: CollectionApp/Dockerfile
+    ports:
+        - "8000:80"
+        - "8001:443"
     networks:
       - collectionapp-network
-    
+  productservice:
+    image: ${DOCKER_REGISTRY-}productservice
+    build:
+      context: .
+      dockerfile: Services/Product/ProductService/Dockerfile
+    ports:
+        - "7000:80"
+        - "7001:443"
+    networks:
+      - collectionapp-network
+
   db-server:
     image: mcr.microsoft.com/mssql/server
     container_name: db-server
@@ -25,3 +50,4 @@ services:
 networks:
   collectionapp-network:
     driver: bridge
+

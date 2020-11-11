@@ -46,6 +46,22 @@
               "target": "Package",
               "version": "[6.4.4, )"
             },
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            },
+            "Microsoft.IdentityModel.Logging": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.10.8, )"
@@ -57,6 +73,10 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.8.0, )"
             }
           },
           "imports": [
@@ -123,6 +143,12 @@
               },
               "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj": {
                 "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj"
+              },
+              "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAssortiment\\CollectionProduct.csproj": {
+                "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAssortiment\\CollectionProduct.csproj"
+              },
+              "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAuth\\CollectionAuth.csproj": {
+                "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAuth\\CollectionAuth.csproj"
               }
             }
           }
@@ -145,6 +171,44 @@
               },
               "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\CollectionFactory\\CollectionFactory.csproj": {
                 "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\CollectionFactory\\CollectionFactory.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAssortiment\\CollectionProduct.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAssortiment\\CollectionProduct.csproj",
+        "projectName": "CollectionProduct",
+        "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAssortiment\\CollectionProduct.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj": {
+                "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAuth\\CollectionAuth.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAuth\\CollectionAuth.csproj",
+        "projectName": "CollectionAuth",
+        "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionAuth\\CollectionAuth.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj": {
+                "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\CollectionEntities\\CollectionEntities.csproj"
               }
             }
           }

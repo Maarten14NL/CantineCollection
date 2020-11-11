@@ -21,7 +21,8 @@ export class MyOrdersComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.collectionCallService.get('/myorders').subscribe(res => {
+    this.collectionCallService.get('api/myorders').subscribe(res => {
+      console.log(res);
       this.orderLists = res;
       this.selectedOrderList = res[0];
     });

@@ -1,0 +1,13 @@
+C:\fontys\git\CantineCollection\backend\CollectionAssortiment\obj\Debug\CollectionProduct.csprojAssemblyReference.cache
+C:\fontys\git\CantineCollection\backend\CollectionAssortiment\obj\Debug\CollectionProduct.csproj.CoreCompileInputs.cache
+C:\fontys\git\CantineCollection\backend\CollectionAssortiment\bin\Debug\CollectionAssortiment.dll
+C:\fontys\git\CantineCollection\backend\CollectionAssortiment\bin\Debug\CollectionAssortiment.pdb
+C:\fontys\git\CantineCollection\backend\CollectionAssortiment\bin\Debug\CollectionEntities.dll
+C:\fontys\git\CantineCollection\backend\CollectionAssortiment\bin\Debug\CollectionEntities.pdb
+C:\fontys\git\CantineCollection\backend\CollectionAssortiment\obj\Debug\CollectionProduct.csproj.CopyComplete
+C:\fontys\git\CantineCollection\backend\CollectionAssortiment\obj\Debug\CollectionAssortiment.dll
+C:\fontys\git\CantineCollection\backend\CollectionAssortiment\obj\Debug\CollectionAssortiment.pdb
+C:\fontys\git\CantineCollection\backend\CollectionAssortiment\bin\Debug\Newtonsoft.Json.dll
+C:\fontys\git\CantineCollection\backend\CollectionAssortiment\bin\Debug\System.Net.Http.Formatting.dll
+C:\fontys\git\CantineCollection\backend\CollectionAssortiment\bin\Debug\Newtonsoft.Json.xml
+C:\fontys\git\CantineCollection\backend\CollectionAssortiment\bin\Debug\System.Net.Http.Formatting.xml

@@ -1,0 +1,158 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductService\\ProductService.csproj": {}
+  },
+  "projects": {
+    "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductData\\ProductData.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductData\\ProductData.csproj",
+        "projectName": "ProductData",
+        "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductData\\ProductData.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductEntities\\ProductEntities.csproj": {
+                "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductEntities\\ProductEntities.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductEntities\\ProductEntities.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductEntities\\ProductEntities.csproj",
+        "projectName": "ProductEntities",
+        "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductEntities\\ProductEntities.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductFactory\\ProductFactory.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductFactory\\ProductFactory.csproj",
+        "projectName": "ProductFactory",
+        "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductFactory\\ProductFactory.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductData\\ProductData.csproj": {
+                "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductData\\ProductData.csproj"
+              },
+              "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductEntities\\ProductEntities.csproj": {
+                "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductEntities\\ProductEntities.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductLogic\\ProductLogic.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductLogic\\ProductLogic.csproj",
+        "projectName": "ProductLogic",
+        "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductLogic\\ProductLogic.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductEntities\\ProductEntities.csproj": {
+                "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductEntities\\ProductEntities.csproj"
+              },
+              "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductFactory\\ProductFactory.csproj": {
+                "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductFactory\\ProductFactory.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductService\\ProductService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductService\\ProductService.csproj",
+        "projectName": "ProductService",
+        "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductService\\ProductService.csproj",
+        "packagesPath": "C:\\Users\\maart\\.nuget\\packages\\",
+        "outputPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\maart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductLogic\\ProductLogic.csproj": {
+                "projectPath": "C:\\fontys\\git\\CantineCollection\\backend\\CollectionApp\\Services\\Product\\ProductLogic\\ProductLogic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.9, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

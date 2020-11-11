@@ -14,8 +14,17 @@ export class PeatComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.collectionCallService.get('/users').subscribe(res => {
+    this.collectionCallService.get('api/peat').subscribe(res => {
       this.users = res;
+      console.log(res);
+    });
+  }
+
+  changeAmount(user, calculate = 1) {
+    user.lastOrder.amount += calculate;
+    this.collectionCallService.post('api/order', user.lastOrder).subscribe(res => {
+    }, error => {
+      user.lastOrder.amount -= calculate;
     });
   }
 
