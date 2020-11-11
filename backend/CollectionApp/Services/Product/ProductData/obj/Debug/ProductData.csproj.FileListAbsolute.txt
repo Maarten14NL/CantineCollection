@@ -1,0 +1,16 @@
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductData\bin\Debug\ProductData.dll.config
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductData\bin\Debug\ProductData.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductData\bin\Debug\ProductData.pdb
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductData\bin\Debug\EntityFramework.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductData\bin\Debug\EntityFramework.SqlServer.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductData\bin\Debug\ProductEntities.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductData\bin\Debug\ProductEntities.pdb
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductData\bin\Debug\EntityFramework.xml
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductData\bin\Debug\EntityFramework.SqlServer.xml
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductData\obj\Debug\ProductData.csprojAssemblyReference.cache
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductData\obj\Debug\ProductData.csproj.CoreCompileInputs.cache
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductData\obj\Debug\ProductData.csproj.CopyComplete
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductData\obj\Debug\ProductData.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductData\obj\Debug\ProductData.pdb
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductData\bin\Debug\System.Data.SqlClient.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductData\bin\Debug\System.Data.SqlClient.xml

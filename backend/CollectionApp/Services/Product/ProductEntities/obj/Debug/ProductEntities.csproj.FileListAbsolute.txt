@@ -1,0 +1,6 @@
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductEntities\bin\Debug\ProductEntities.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductEntities\bin\Debug\ProductEntities.pdb
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductEntities\obj\Debug\ProductEntities.csprojAssemblyReference.cache
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductEntities\obj\Debug\ProductEntities.csproj.CoreCompileInputs.cache
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductEntities\obj\Debug\ProductEntities.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\Services\Product\ProductEntities\obj\Debug\ProductEntities.pdb

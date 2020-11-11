@@ -12,7 +12,7 @@ namespace CollectionAssortiment
 {
     public class ProductController : IProduct
     {
-        private const string RequestUri = "https://localhost:44317/api/product";
+        private const string RequestUri = "https://localhost:44380/api/product";
         private static readonly HttpClient client = new HttpClient()
         {
             BaseAddress = new Uri("https://localhost:44317")

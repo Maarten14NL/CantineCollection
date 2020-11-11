@@ -24,6 +24,16 @@ services:
         - "8001:443"
     networks:
       - collectionapp-network
+  productservice:
+    image: ${DOCKER_REGISTRY-}productservice
+    build:
+      context: .
+      dockerfile: Services/Product/ProductService/Dockerfile
+    ports:
+        - "7000:80"
+        - "7001:443"
+    networks:
+      - collectionapp-network
 
   db-server:
     image: mcr.microsoft.com/mssql/server
@@ -40,3 +50,4 @@ services:
 networks:
   collectionapp-network:
     driver: bridge
+

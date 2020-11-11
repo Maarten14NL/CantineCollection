@@ -85,5 +85,13 @@ C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\ne
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\netcoreapp3.1\CollectionLogic.dll.config
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\netcoreapp3.1\CollectionAuth.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\netcoreapp3.1\CollectionAuth.pdb
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\bin\Debug\netcoreapp3.1\CollectionFactory.dll.config
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\obj\Debug\netcoreapp3.1\CollectionApp.csproj.CoreCompileInputs.cache
 C:\fontys\git\CantineCollection\backend\CollectionApp\CollectionApp\obj\Debug\netcoreapp3.1\CollectionApp.MvcApplicationPartsAssemblyInfo.cache
