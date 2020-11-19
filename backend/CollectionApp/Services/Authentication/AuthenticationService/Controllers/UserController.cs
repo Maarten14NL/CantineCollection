@@ -28,19 +28,19 @@ namespace AuthenticationService.Controllers
             var token = _userService.Authenticate("maarten.jakobs@gmail.com", "sonu@123");
 
             if (token == null)
-                return BadRequest(new { message = "Username or password is incorrect" });
+                return Ok(new { message = "Username or password is incorrect" });
 
             return Ok(token);
         }
 
         [AllowAnonymous]
-        [HttpPost("authenticate")]
+        [HttpPost]
         public IActionResult Authenticate([FromBody] Login loginParam)
         {
             var token = _userService.Authenticate(loginParam.Username, loginParam.Password);
 
             if (token == null)
-                return BadRequest(new { message = "Username or password is incorrect" });
+                return Ok(new { message = "Username or password is incorrect" });
 
             return Ok(token);
         }

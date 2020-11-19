@@ -24,11 +24,17 @@ namespace CollectionAuth
             //client.DefaultRequestHeaders.Accept.Add(
             //    new MediaTypeWithQualityHeaderValue("application/json")
             //);
+            HttpResponseMessage response = await client.PostAsync("/api/user", new StringContent(JsonConvert.SerializeObject(new { Username = "maarten.jakobs@gmail.com", Password = "sonu@123" }),
+                                Encoding.UTF8, "application/json"));
 
-            HttpResponseMessage response = await client.GetAsync("/api/user");
             response.EnsureSuccessStatusCode();
             string result = response.Content.ReadAsStringAsync().Result;
             AuthDto accessToken = JsonConvert.DeserializeObject<AuthDto>(result);
+
+            if (accessToken.auth_token == null)
+            {
+                return null;
+            }
 
             var tokenHandler = new JwtSecurityTokenHandler();
             var paresedToken = tokenHandler.ReadJwtToken(accessToken.auth_token);

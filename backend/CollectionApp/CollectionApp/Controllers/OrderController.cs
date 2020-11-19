@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CollectionApp.Hubs;
 using CollectionLogic;
 using CollectionLogic.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -14,7 +16,20 @@ namespace CollectionApp.Controllers
     [ApiController]
     public class OrderController : ControllerBase
     {
+        private readonly IHubContext<NotificationHub> _notificationHubContext;
+        private readonly IHubContext<NotificationUserHub> _notificationUserHubContext;
+        private readonly IUserConnectionManager _userConnectionManager;
+
+        public OrderController(IHubContext<NotificationHub> notificationHubContext, IHubContext<NotificationUserHub> notificationUserHubContext, IUserConnectionManager userConnectionManager)
+        {
+            _notificationHubContext = notificationHubContext;
+            _notificationUserHubContext = notificationUserHubContext;
+            _userConnectionManager = userConnectionManager;
+            notificationController = new NotificationController(_notificationHubContext, _notificationUserHubContext, _userConnectionManager);
+        }
+
         private readonly Order orderLogic = new Order();
+        private readonly NotificationController notificationController;
 
         // GET: api/<OrderController>
         [HttpGet]
@@ -32,7 +47,7 @@ namespace CollectionApp.Controllers
 
         // POST api/<OrderController>
         [HttpPost]
-        public void Post([FromBody] OrderEntity order)
+        public async void Post([FromBody] OrderEntity order)
         {
             if(order.Id != null)
             {
@@ -42,13 +57,15 @@ namespace CollectionApp.Controllers
             {
                 orderLogic.Create(order);
             }
+            await notificationController.GetAsync("user", 1);
         }
 
         // PUT api/<OrderController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] OrderEntity order)
+        public async Task PutAsync(int id, [FromBody] OrderEntity order)
         {
             orderLogic.Update(order);
+            await notificationController.GetAsync("user", 1);
         }
 
         // DELETE api/<OrderController>/5

@@ -1,5 +1,6 @@
 ﻿using CollectionEntities;
 using CollectionFactory;
+using CollectionLogic.Entities;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
@@ -16,13 +17,17 @@ namespace CollectionLogic
         
         private readonly IUser _UserDal = UserFactory.GetUser();
         private readonly IAuth _AuthDal = AuthFactory.GetAuth();
-        private AuthDto auth;
+        private static AuthDto auth;
 
         private bool _loggedIn = false;
-        public void Login()
+        public UserEntitiy Login()
         {
-            auth = _AuthDal.Login().Result;
-            _loggedIn = true;
+            if (_AuthDal.Login().Result != null)
+            {
+                auth = _AuthDal.Login().Result;
+                return new UserEntitiy().UserDTOToUser(GetLoggedInUser());
+            }
+            return null;
         }
 
         public void LogOut()
@@ -37,20 +42,23 @@ namespace CollectionLogic
 
         public UserDTO GetLoggedInUser()
         {
-            this.Login();
             var tokenHandler = new JwtSecurityTokenHandler();
-            var paresedToken = tokenHandler.ReadJwtToken(auth.auth_token);
+            if (auth != null) { 
+                var paresedToken = tokenHandler.ReadJwtToken(auth.auth_token);
 
-            UserDTO user = new UserDTO()
-            {
-                Id = Convert.ToInt32(paresedToken.Claims.Where(c => c.Type == "id").FirstOrDefault().Value),
-                FirstName = paresedToken.Claims.Where(c => c.Type == "firstName").FirstOrDefault().Value,
-                LastName = paresedToken.Claims.Where(c => c.Type == "lastName").FirstOrDefault().Value,
-                Email = paresedToken.Claims.Where(c => c.Type == "email").FirstOrDefault().Value,
-                ProfilePicture = paresedToken.Claims.Where(c => c.Type == "profilePicture").FirstOrDefault().Value,
+                UserDTO user = new UserDTO()
+                {
+                    Id = Convert.ToInt32(paresedToken.Claims.Where(c => c.Type == "id").FirstOrDefault().Value),
+                    FirstName = paresedToken.Claims.Where(c => c.Type == "firstName").FirstOrDefault().Value,
+                    LastName = paresedToken.Claims.Where(c => c.Type == "lastName").FirstOrDefault().Value,
+                    Email = paresedToken.Claims.Where(c => c.Type == "email").FirstOrDefault().Value,
+                    ProfilePicture = paresedToken.Claims.Where(c => c.Type == "profilePicture").FirstOrDefault().Value,
 
-            };
+                };
             return user;
+            }
+            return null;
+        
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CollectionEntities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,5 +16,17 @@ namespace CollectionLogic.Entities
         public string ProfilePicture { get; set; }
         public OrderListEntity OrderList { get; set; }
         public OrderEntity LastOrder { get; set; }
+
+        public UserEntitiy UserDTOToUser(UserDTO user)
+        {
+            return new UserEntitiy()
+            {
+                Id = user.Id,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Email = user.Email,
+                ProfilePicture = user.ProfilePicture
+            };
+        }
     }
 }

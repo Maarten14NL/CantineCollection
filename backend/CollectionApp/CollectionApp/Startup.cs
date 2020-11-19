@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CollectionApp.Hubs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -44,6 +45,9 @@ namespace CollectionApp
                     });
             });
             services.AddControllers();
+            services.AddSignalR();
+
+            services.AddSingleton<IUserConnectionManager, UserConnectionManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -61,9 +65,12 @@ namespace CollectionApp
 
             app.UseAuthorization();
 
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<NotificationHub>("/NotificationHub");
+                endpoints.MapHub<NotificationUserHub>("/NotificationUserHub");
             });
         }
     }

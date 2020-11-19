@@ -28,9 +28,6 @@ export class DashboardComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.collectionCall.get('https://postman-echo.com/get?foo1=bar1&foo2=bar2').subscribe(res => {
-      console.log(res);
-    });
 
     this.datasets = [
       [0, 20, 10, 30, 15, 40, 20, 60, 60],

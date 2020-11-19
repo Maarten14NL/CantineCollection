@@ -21,6 +21,8 @@ export class AuthService {
       this.loginUser = login;
       this.loggedIn = true;
       this.router.navigate(['/']);
+    }, error => {
+      alert('Verkeerde gebruikersnaam of wachtwoord');
     });
   }
 

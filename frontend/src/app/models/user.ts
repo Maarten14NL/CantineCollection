@@ -1,9 +1,9 @@
 import {Order} from './order';
 
 export class User {
-  FirstName: string;
-  LastName: string;
-  Email; string;
-  ProfilePicture: string;
+  firstName: string;
+  lastName: string;
+  email; string;
+  profilePicture: string;
   lastOrder?: Order;
 }
